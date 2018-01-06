@@ -1,0 +1,293 @@
+<!--
+  Generated template for the CategoriasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Categorias</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+      <div padding>
+        <ion-segment [(ngModel)]="categorias">
+          <ion-segment-button value="ropa">
+            Ropa
+          </ion-segment-button>
+        <ion-segment-button value="joyeria">
+            Joyeria
+            </ion-segment-button>
+          <ion-segment-button value="hogar">
+            Hogar
+          </ion-segment-button>
+
+          <ion-segment-button value="mascotas">
+              Mascotas
+          </ion-segment-button>
+
+          <ion-segment-button value="tecnologia">
+              Tecnologia
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+
+      <div [ngSwitch]="categorias">
+        <ion-list *ngSwitchCase="'ropa'">
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/imgs/clothes.png">
+            </ion-thumbnail>
+            <h2>Camisetas</h2>
+            <h2>$5--$10</h2>
+            <button ion-button block (click)= "irCamisetas()" color ="BLUE"> IR </button>
+          </ion-item>
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="../assets/imgs/shoes.png">
+                </ion-thumbnail>
+                <h2>ZAPATOS</h2>
+                <h2>$10</h2>
+                <button ion-button block (click)= "irZapatos()" color ="BLUE"> IR </button>
+              </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+              <img src="../assets/imgs/pant.png">
+              </ion-thumbnail>
+              <h2>PANTALONES</h2>
+              <h2>$7</h2>
+              <button ion-button block (click)= "irPantalon()" color ="blue"> IR </button>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-start>
+                <img src="../assets/imgs/tie.png">
+                </ion-thumbnail>
+                <h2>CORBATAS</h2>
+                <h2>$5----$7</h2>
+                <button ion-button block (click)= "irCorbata()" color ="BLUE"> IR </button>
+              </ion-item>
+                  <ion-item>
+                    <ion-thumbnail item-start>
+                    <img src="../assets/imgs/sho.png">
+                    </ion-thumbnail>
+                    <h2>ZAPATOS DEPORTIVOS</h2>
+                    <h2>$5----$7</h2>
+                    <button ion-button block (click)= "irDeportivo()" color ="BLUE"> IR </button>
+                  </ion-item>              
+                <ion-item>
+                  <ion-thumbnail item-start>
+                  <img src="../assets/imgs/abrigo.png">
+                  </ion-thumbnail>
+                  <h2>ABRIGOS</h2>
+                  <h2>$5----$7</h2>
+                  <button ion-button block (click)= "irAbrigo()" color ="BLUE"> IR </button>
+                </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'joyeria'">
+            <ion-item>
+              <ion-thumbnail item-start>
+              <img src="../assets/imgs/ring.png">
+              </ion-thumbnail>
+              <h2>ANILLOS</h2>
+              <h2>$25</h2>
+              <button ion-button block (click)= "irAnillo()" color ="BLUE"> IR </button>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+              <img src="../assets/imgs/rolex.jpg">
+              </ion-thumbnail>
+              <h2>RELOJ</h2>
+              <h2>$20</h2>
+              <button ion-button block (click)= "irReloj()" color ="BLUE"> IR </button>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+              <img src="../assets/imgs/cadena.jpg">
+              </ion-thumbnail>
+              <h2>PULSERAS</h2>
+              <h2>$25</h2>
+              <button ion-button block (click)= "irPulsera()" color ="BLUE"> IR </button>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+              <img src="../assets/imgs/collar.jpg">
+              </ion-thumbnail>
+              <h2>COLLARES</h2>
+              <h2>$25</h2>
+              <button ion-button block (click)= "irCollar()" color ="BLUE"> IR </button>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+              <img src="../assets/imgs/arete.jpg">
+              </ion-thumbnail>
+              <h2>ARETES</h2>
+              <h2>$5</h2>
+              <button ion-button block (click)= "irArete()" color ="BLUE"> IR </button>
+            </ion-item>
+            <ion-item>
+              <ion-thumbnail item-start>
+              <img src="../assets/imgs/coron.png">
+              </ion-thumbnail>
+              <h2>CORONA</h2>
+              <h2>$25</h2>
+              <button ion-button block (click)= "irCorona()" color ="BLUE"> IR </button>
+            </ion-item>
+          </ion-list>
+      
+        <ion-list *ngSwitchCase="'hogar'">
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/mesa.jpg">
+            </ion-thumbnail>
+            <h2>MESA</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irMesa()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/silla.png">
+            </ion-thumbnail>
+            <h2>SILLAS</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irSilla()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/cortina.jpg">
+            </ion-thumbnail>
+            <h2>CORTINA</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irCortina()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/cama.jpg">
+            </ion-thumbnail>
+            <h2>CAMAS</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irCama()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/herramienta.jpg">
+            </ion-thumbnail>
+            <h2>HERRAMIENTAS</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irHerramienta()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/cubiertos.jpg">
+            </ion-thumbnail>
+            <h2>CUBIERTOS</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irCubierto()" color ="BLUE"> IR </button>
+          </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'mascotas'">
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/perro.png">
+            </ion-thumbnail>
+            <h2>PERRO</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irPerro()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/gato.png">
+            </ion-thumbnail>
+            <h2>GATO</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irGato()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/conejo.png">
+            </ion-thumbnail>
+            <h2>CONEJO</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irConejo()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/hamster.jpg">
+            </ion-thumbnail>
+            <h2>HAMSTER</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irHamster()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/pez.jpg">
+            </ion-thumbnail>
+            <h2>PEZ</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irPez()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/animal.jpg">
+            </ion-thumbnail>
+            <h2>OTROS</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irAnimal()" color ="BLUE"> IR </button>
+          </ion-item>
+        </ion-list>
+
+
+        <ion-list *ngSwitchCase="'tecnologia'">
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/celular.jpg">
+            </ion-thumbnail>
+            <h2>CELULARES</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irCelular()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/audifono.png">
+            </ion-thumbnail>
+            <h2>AUDIFONO</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irAudifono()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/laptop.jpg">
+            </ion-thumbnail>
+            <h2>LAPTOP</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irLaptop()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/impresora.png">
+            </ion-thumbnail>
+            <h2>IMPRESORAS</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irImpresora()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+            <img src="../assets/imgs/micro.jpg">
+            </ion-thumbnail>
+            <h2>MICORFONOS Y PARLANTES</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irMicro()" color ="BLUE"> IR </button>
+          </ion-item>
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/imgs/tecnologia.jpg">
+            </ion-thumbnail>
+            <h2>OTROS</h2>
+            <h2>$25</h2>
+            <button ion-button block (click)= "irTecnologia()" color ="BLUE"> IR </button>
+          </ion-item>
+        </ion-list>
+      </div>             
+</ion-content>

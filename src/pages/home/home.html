@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Bienvenido a TUKISHOP</h2>
+  
+  <ion-img  width="100" height="100" text-aling = left src ="../assets/imgs/cart.png"></ion-img>
+
+  <p>
+    <ion-list>
+      <ion-item>
+          <ion-label floating>Usuario</ion-label>
+          <ion-input type="text">name</ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password">log</ion-input>
+        </ion-item>
+      
+      </ion-list>
+     <button ion-button block (click)= "launchCategoria()"> Empezar </button>
+     <button ion-button block (click)= "registrarUser()" color ="dark"> Registrarse </button>
+  </p>
+</ion-content>
